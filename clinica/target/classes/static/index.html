@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Odontologo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Crear Odontólogos</h1>
+    <form id="odontologoForm" action="odontologos/registrar" method="post">
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required minlength="10" maxlength="50"><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50"><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="50"><br><br>
+
+        <button type="submit" id="generarOdontologo">Generar Odontólogo</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
